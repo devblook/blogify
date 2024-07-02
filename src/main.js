@@ -1,4 +1,5 @@
 import  './index.css'
+import 'primeicons/primeicons.css'
 
 import router from './router'
 
