@@ -1,9 +1,9 @@
-import {createRouter, createWebHashHistory, createWebHistory} from "vue-router";
+import {createRouter, createWebHashHistory} from "vue-router";
 
 import HomePage from '@/pages/Home.page.vue'
 
 const router = createRouter({
-    history: createWebHashHistory("web"),
+    history: createWebHashHistory("blogify"),
     routes: [
         {
             path: "/",
