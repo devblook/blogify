@@ -1,7 +1,7 @@
 <script setup>
 
 import ImageButton from "@/components/OptionButton.component.vue";
-import {darkMode, secondBackgroundColor, toggleColorTheme} from "@/scripts/color-scheme.js";
+import {darkMode, toggleColorTheme} from "@/scripts/color-scheme.js";
 
 </script>
 
@@ -25,8 +25,6 @@ import {darkMode, secondBackgroundColor, toggleColorTheme} from "@/scripts/color
           <image-button>
             <p>es</p>
 
-            <div v-if="darkMode">
-            </div>
           </image-button>
 
 
