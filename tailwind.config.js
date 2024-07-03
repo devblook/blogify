@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       width: {
-        'header': '25em'
+        'page-limit': '40vw'
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif']
