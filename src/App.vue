@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class = "w-full flex flex-col">
+  <div class = "w-full flex flex-col items-center">
     <router-view/>
   </div>
 </template>
