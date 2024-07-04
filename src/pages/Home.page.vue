@@ -12,11 +12,11 @@ import {changeLanguage, languageName}  from '@/scripts/i18n.js';
   <main class = "flex mt-24 w-page-limit min-w-72 flex-col gap-10">
     <div>
       <div class = "flex justify-between">
-        <h1 class = "text-4xl">{{$t('homeTitle')}}</h1>
+        <h1 class = "text-4xl">{{$t('home.title')}}</h1>
         <div :key="darkMode" class = " computer:text-2xl mobile:text-xl flex gap-2.5">
           <rounded-button @click="toggleColorTheme">
-            <i class = "pi pi-moon"/>
-
+            <i v-if="darkMode" class = "pi pi-moon"/>
+            <i v-else class = "pi pi-sun"/>
           </rounded-button>
 
           <rounded-button @click="changeLanguage" :key="darkMode">
@@ -27,7 +27,12 @@ import {changeLanguage, languageName}  from '@/scripts/i18n.js';
         </div>
       </div>
       <hr class = "my-5 border-gray-500">
-      <p>{{$t('homeContent')}}</p>
+      <div class = "flex flex-col gap-3 text-lg">
+        <p>{{$t('home.subtitle')}}</p>
+        <p>{{$t('home.content')}}</p>
+
+
+      </div>
     </div>
     <div class = "text-1xl flex gap-2.5 items-center">
       <i class = "pi pi-spin pi-spinner"/>
