@@ -1,5 +1,8 @@
 {
-  "homeTitle": "Home",
-  "homeContent": "¡Welcome to this page!",
+  "home": {
+    "title": "Home",
+    "subtitle": "¡Welcome to the page!",
+    "content": "This page is a project about a blog design system."
+  },
   "pageStatus": "Page in construction.."
 }

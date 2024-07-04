@@ -1,5 +1,8 @@
 {
-  "homeTitle": "Inicio",
-  "homeContent": "¡Bienvenido a la página!",
+  "home": {
+    "title": "Inicio",
+    "subtitle": "¡Bienvenido a la pagina!",
+    "content": "Está pagina es de un proyecto sobre el diseño de un sistema de blogs. "
+  },
   "pageStatus": "Pagina en construcción.."
 }
