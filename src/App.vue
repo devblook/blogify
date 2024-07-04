@@ -7,7 +7,7 @@ import {backgroundColor, textColor} from "@/scripts/color-scheme.js";
 
 <template>
 
-  <div :class="backgroundColor + ' ' + textColor " class = "w-full h-all-page flex flex-col items-center">
+  <div :class="backgroundColor + ' ' + textColor " class = "w-full h-all-page flex flex-col items-center transition-colors">
     <router-view/>
   </div>
 </template>
