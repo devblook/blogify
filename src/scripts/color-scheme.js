@@ -2,17 +2,18 @@ import {ref} from "vue";
 
 let darkMode = ref(false);
 
-let backgroundColor = ref("bg-white");
-let secondBackgroundColor = ref("bg-gray-200");
-let textColor = ref("text-black");
+let backgroundColor = ref("");
+let secondBackgroundColor = ref("");
+let textColor = ref("");
 
 function initDarkMode(){
 
     if (localStorage.getItem("dark-mode") === null){
         localStorage.setItem("dark-mode", "false");
-    }else{
-        toggleColorTheme(Boolean(localStorage.getItem("dark-mode")));
     }
+
+    toggleColorTheme(Boolean(localStorage.getItem("dark-mode")));
+
 }
 
 function toggleColorTheme(colorStatus) {
@@ -32,6 +33,5 @@ function toggleColorTheme(colorStatus) {
 
 }
 
-initDarkMode()
 
-export { darkMode, toggleColorTheme , backgroundColor, secondBackgroundColor, textColor};
+export { initDarkMode, darkMode, toggleColorTheme , backgroundColor, secondBackgroundColor, textColor};

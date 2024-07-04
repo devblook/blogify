@@ -1,8 +1,9 @@
 <script setup>
 
-import {backgroundColor, textColor} from "@/scripts/color-scheme.js";
+import {backgroundColor, initDarkMode, textColor} from "@/scripts/color-scheme.js";
 import {onMounted} from "vue";
 
+initDarkMode()
 
 onMounted(() => {
   document.getElementById("page").classList.add("transition-colors")
