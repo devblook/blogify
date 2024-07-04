@@ -6,19 +6,32 @@ let backgroundColor = ref("bg-white");
 let secondBackgroundColor = ref("bg-gray-200");
 let textColor = ref("text-black");
 
-function toggleColorTheme() {
-    console.log("Toggle color theme")
-    darkMode.value =!darkMode.value;
+function initDarkMode(){
+
+    if (localStorage.getItem("dark-mode") === null){
+        localStorage.setItem("dark-mode", "false");
+    }else{
+        toggleColorTheme(Boolean(localStorage.getItem("dark-mode")));
+    }
+}
+
+function toggleColorTheme(colorStatus) {
+
+    darkMode.value = colorStatus;
+    localStorage.setItem("dark-mode", darkMode.value);
 
     if (darkMode.value){
         backgroundColor.value = "bg-black";
         textColor.value = "text-white";
-        secondBackgroundColor = "bg-gray-500";
+        secondBackgroundColor.value = "bg-gray-500";
     }else{
         backgroundColor.value = "bg-white";
         textColor.value = "text-black";
-        secondBackgroundColor = "bg-gray-200";
+        secondBackgroundColor.value = "bg-gray-200";
     }
+
 }
+
+initDarkMode()
 
 export { darkMode, toggleColorTheme , backgroundColor, secondBackgroundColor, textColor};
