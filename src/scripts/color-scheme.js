@@ -8,11 +8,14 @@ let textColor = ref("");
 
 function initDarkMode(){
 
-    if (localStorage.getItem("dark-mode") === null){
+    if (localStorage.getItem("dark-mode") === null) {
         localStorage.setItem("dark-mode", "false");
     }
 
-    toggleColorTheme(Boolean(localStorage.getItem("dark-mode")));
+    let darkMode = localStorage.getItem("dark-mode");
+    let colorScheme = (darkMode === "true")
+
+    toggleColorTheme(colorScheme);
 
 }
 
