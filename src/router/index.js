@@ -3,7 +3,7 @@ import {createRouter, createWebHashHistory} from "vue-router";
 import HomePage from '@/pages/Home.page.vue'
 
 const router = createRouter({
-    history: createWebHashHistory("blogin"),
+    history: createWebHashHistory("web-project-2"),
     routes: [
         {
             path: "/",
