@@ -17,7 +17,8 @@ export default {
         inter: ['Inter', 'sans-serif']
       },
       fontSize: {
-        'header':'1.6em'
+        'header':'1.6em',
+        '1.5xl':'1.3em'
       }
     },
   },

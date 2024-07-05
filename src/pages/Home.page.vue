@@ -33,15 +33,22 @@ import {changeLanguage, languageName}  from '@/scripts/i18n.js';
           <p>{{$t('home.content')}}</p>
         </div>
       </div>
-      <div class = "text-1xl flex gap-2.5 items-center">
-        <i class = "pi pi-spin pi-spinner"/>
-        <p>{{$t('pageStatus')}}</p>
+      <div class = "flex flex-col gap-1">
+        <div class = "flex flex-col items-center">
+          <i class = "pi pi-cog text-3xl ml-36 pi-spin"/>
+          <i class = "pi pi-server text-blue-400 text-9xl"/>
+        </div>
+        <div class = "text-1.5xl flex gap-2.5 items-center justify-center">
+          <i class = "pi pi-spin pi-spinner"/>
+          <p class = "">{{$t('pageStatus')}}</p>
+        </div>
       </div>
+
     </main>
     <hr class = "mt-5 mb-3 border-gray-500">
     <footer class="flex justify-end">
       <a href="https://github.com/devblook/blogin">
-        <i class = "pi pi-github text-2xl"></i>
+        <i class = "pi pi-github text-3xl"></i>
       </a>
     </footer>
   </div>

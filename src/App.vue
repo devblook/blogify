@@ -8,14 +8,19 @@ initDarkMode()
 
 
 onUpdated(() => {
-  document.getElementById("page").classList.add("transition-colors")
+
+  let elements = document.getElementsByClassName("transitionable-component");
+
+  for (let element of elements) {
+    element.classList.add("transition-colors")
+  }
 })
 
 </script>
 
 <template>
 
-  <div id = "page" :class="[backgroundColor, textColor]" class = "w-full h-all-page flex flex-col items-center">
+  <div id = "page" :class="[backgroundColor, textColor]" class = "transitionable-component w-full h-all-page flex flex-col items-center">
     <router-view/>
   </div>
 
