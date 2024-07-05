@@ -1,11 +1,13 @@
 <script setup>
 
 import {backgroundColor, initDarkMode, textColor} from "@/scripts/color-scheme.js";
-import {onMounted} from "vue";
+
+import {onUpdated} from "vue";
 
 initDarkMode()
 
-onMounted(() => {
+
+onUpdated(() => {
   document.getElementById("page").classList.add("transition-colors")
 })
 
@@ -13,7 +15,7 @@ onMounted(() => {
 
 <template>
 
-  <div id = "page" :class="backgroundColor + ' ' + textColor " class = "w-full h-all-page flex flex-col items-center">
+  <div id = "page" :class="[backgroundColor, textColor]" class = "w-full h-all-page flex flex-col items-center">
     <router-view/>
   </div>
 
