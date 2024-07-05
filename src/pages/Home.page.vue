@@ -14,13 +14,13 @@ import {changeLanguage, languageName}  from '@/scripts/i18n.js';
       <div>
         <div class = "flex justify-between">
           <h1 class = "text-4xl">{{$t('home.title')}}</h1>
-          <div :key="darkMode" class = " computer:text-2xl mobile:text-xl flex gap-2.5">
+          <div class = " computer:text-2xl mobile:text-xl flex gap-2.5">
             <rounded-button @click="toggleColorTheme(!darkMode)">
               <i v-if="darkMode" class = "pi pi-moon"/>
               <i v-else class = "pi pi-sun"/>
             </rounded-button>
 
-            <rounded-button @click="changeLanguage" :key="darkMode">
+            <rounded-button @click="changeLanguage">
               <p>{{languageName}}</p>
             </rounded-button>
 
