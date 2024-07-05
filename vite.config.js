@@ -7,7 +7,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/web-project-2W",
+  base: "/web-project-2",
   plugins: [
     vue(),
   ],
