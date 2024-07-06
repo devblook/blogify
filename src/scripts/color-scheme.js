@@ -8,6 +8,9 @@ let textColor = ref("");
 
 function initDarkMode(){
 
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches){
+        localStorage.setItem("dark-mode", "true");
+    }
     if (localStorage.getItem("dark-mode") === null) {
         localStorage.setItem("dark-mode", "false");
     }
