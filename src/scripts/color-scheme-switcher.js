@@ -40,4 +40,11 @@ function toggleColorTheme(colorStatus) {
 }
 
 
-export { initDarkMode, darkMode, toggleColorTheme , backgroundColor, secondBackgroundColor, textColor};
+export {
+    initDarkMode,
+    darkMode,
+    toggleColorTheme ,
+    backgroundColor,
+    secondBackgroundColor,
+    textColor
+};
