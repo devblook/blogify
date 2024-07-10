@@ -1,11 +1,9 @@
 <script setup>
 
-import {backgroundColor, initDarkMode, textColor} from "@/scripts/color-scheme.js";
-
+import {backgroundColor, initDarkMode, textColor} from "@/scripts/color-scheme-switcher.js";
 import {onUpdated} from "vue";
 
 initDarkMode()
-
 
 onUpdated(() => {
 
@@ -20,12 +18,9 @@ onUpdated(() => {
 
 <template>
 
-  <div id = "page" :class="[backgroundColor, textColor]" class = "transitionable-component w-full h-all-page flex flex-col items-center">
+  <div id = "page" :class="[backgroundColor, textColor]" class = "transitionable-component w-full h-all-page min-h-all-page flex flex-col items-center">
     <router-view/>
   </div>
 
 </template>
 
-<style scoped>
-
-</style>

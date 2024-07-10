@@ -1,6 +1,6 @@
 <script setup>
 
-import {secondBackgroundColor} from "@/scripts/color-scheme.js";
+import {secondBackgroundColor} from "@/scripts/color-scheme-switcher.js";
 </script>
 
 <template>
@@ -8,7 +8,4 @@ import {secondBackgroundColor} from "@/scripts/color-scheme.js";
     <slot/>
   </div>
 </template>
-
-<style scoped>
-
-</style>
+x
