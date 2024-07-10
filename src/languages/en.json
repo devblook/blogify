@@ -1,0 +1,10 @@
+{
+  "global": {
+    "shareMessage": "¡Page link copied on the clipboard!"
+  },
+  "home": {
+    "title": "Home",
+    "content": "¡Welcome to the page! \n\nThis page is part from a project about the creation of web applications for one of the members from the organization DevBlook. There haven't a determined idea yet about the general content of the page."
+  },
+  "pageStatus": "Page in construction.."
+}

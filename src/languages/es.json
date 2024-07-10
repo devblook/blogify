@@ -1,0 +1,10 @@
+{
+  "global": {
+    "shareMessage": "¡Enlace de la pagina copiado en el portapapeles!"
+  },
+  "home": {
+    "title": "Inicio",
+    "content": "¡Bienvenido a esta pagina! \n\nEsta página es parte de un proyecto de creación de aplicaciones web por uno de los integrantes de la organización DevBlook. Aun no hay una idea determinada sobre el contenido general de esta página."
+  },
+  "pageStatus": "Pagina en construcción.."
+}
